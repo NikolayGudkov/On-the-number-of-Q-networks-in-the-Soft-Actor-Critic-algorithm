@@ -5,7 +5,7 @@ We aim to perform a series of empirical experiments with the Soft Actor-Critic (
 The intuition dictates that adding more Q-functions may improve the learning performance further. We want to study how the performace of the original algorithm will change if the number of neural networks, which approximate the value function, increase. For the purpose of this study, we use standard 'Pendulum-v0' environment provided by [Gym OpenAI](https://gym.openai.com/envs/Pendulum-v0/).
 
 We extend the implementation of the SAC algorithm presented by [Miguel Morales (@mimoralea)](https://github.com/mimoralea) in several ways. Besides the number of networks approximation Q-value, other changes include:
-..* The average reward setting is used. This setting is typical for continuing problems like the 'Pendulum-v0'environment without episode boundaries. It should replace discounting setting as suggest by [Sutton and Barto (2018)](http://www.incompleteideas.net/book/RLbook2020.pdf) (see Chapter 10.3 and 13.6) under the function approximation.
-..* Target policy network is added for better stability. Target smoothing based on Polyak averaging is incorporated.
-..* Replay buffer is based on ''deque'' data structure.
-..* The order of network paramter update is changed.
+* The average reward setting is used. This setting is typical for continuing problems like the 'Pendulum-v0'environment without episode boundaries. It should replace discounting setting as suggest by [Sutton and Barto (2018)](http://www.incompleteideas.net/book/RLbook2020.pdf) (see Chapter 10.3 and 13.6) under the function approximation.
+* Target policy network is added for better stability. Target smoothing based on Polyak averaging is incorporated.
+* Replay buffer is based on ''deque'' data structure.
+* The order of network paramter update is changed.

@@ -13,4 +13,6 @@ We extend the implementation of the SAC algorithm presented by [Miguel Morales (
 
 
 
-In our numerical experiments we run a number of training sessions of the SAC agents with ($N=2, 4, 8, 16, 32$) independent networks. For each session we repeat the experiment across ten random seeds.
+In our numerical experiments we run a number of training sessions of the SAC agents with 2, 4, 8, 16 and 32 independent networks approximation Q-value. For each session we repeat the experiment across ten random seeds. The training ends when the agent achieves an moving average of -150 across previous 100 episodes. 
+
+![Figure 1](https://github.com/NikolayGudkov/Some-analysis-of-the-Soft-Actor-Critic-algorithm/blob/main/SAC_plus_1.png)

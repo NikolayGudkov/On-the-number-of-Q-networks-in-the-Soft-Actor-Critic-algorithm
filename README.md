@@ -13,3 +13,4 @@ We extend the implementation of the SAC algorithm presented by [Miguel Morales (
 
 
 
+In our numerical experiments we run a number of training sessions of the SAC agents with ($N=2, 4, 8, 16, 32$) independent networks. For each session we repeat the experiment across ten random seeds.

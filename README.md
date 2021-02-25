@@ -6,9 +6,10 @@ The intuition dictates that adding more Q-functions may improve the learning per
 
 We extend the implementation of the SAC algorithm presented by [Miguel Morales (@mimoralea)](https://github.com/mimoralea) in several ways. Besides the number of networks for Q-value approximation, other changes include:
 * The average reward setting is used. This setting is typical for continuing problems like the 'Pendulum-v0'environment without episode boundaries. It should replace discounting setting as suggested by [Sutton and Barto (2018)](http://www.incompleteideas.net/book/RLbook2020.pdf) (see Chapter 10.3 and 13.6) under the function approximation.
-* Target policy network is added for better stability. Target smoothing based on Polyak averaging is incorporated.
+* Target policy network is added for better stability. 
+* Target policy smoothing based on Polyak averaging and delaying of update is incorporated.
 * Replay buffer is based on ''deque'' data structure.
-* The order of the networks' parameters update is changed.
+* The order of the networks' parameters update is changed to avoind numerical issues.
 
 
 

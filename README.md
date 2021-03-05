@@ -24,10 +24,10 @@ For a single seed, the algorithm's performance for a different number of Q-netwo
 
 ![Figure 2](https://github.com/NikolayGudkov/Some-analysis-of-the-Soft-Actor-Critic-algorithm/blob/main/SAC_plus_2.png)
 
-The minor difference in the performance of various specifications can be explained by the fact that all networks are trained using the same batch of experiences collected from one replay buffer (unlike in the parallelized algorithms like A3C, A2C, PPO, etc., in which experiences are collected in parallel). Therefore, the estimated parameters for all networks converge to similar values. The Q-functions are very close to each other, which agrees with the results shown in the second figure above.
+The minor difference in the performance of various specifications can be explained by the fact that all networks are trained using the same batch of experiences collected from one replay buffer (unlike in the parallelized algorithms such as A3C, A2C, PPO, etc., in which experiences are collected in parallel). Therefore, the estimated parameters for all networks converge to similar values. Thus, the Q-functions are very close to each other, which agrees with the results shown in the second figure above.
 
 ## Conclusion
-Although the performance across different SAC specifications with a varying number of networks is similar, the computational burden of having many networks is much severe. Therefore, there is no computational benefit from adding more than two neural networks to approximate Q-function.
+Although the performance across different SAC specifications with a varying number of networks is similar, the computational burden of having many networks is much severe. Therefore, there is no practical benefit from adding more than two neural networks to approximate Q-function.
 
 ## Future research
 Perform similar experiments in more complex environments like 'HopperBulletEnv-v0' and 'HalfCheetahBulletEnv-v0'

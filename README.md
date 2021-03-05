@@ -18,7 +18,7 @@ In our numerical experiments, we run several training sessions of the SAC agents
 
 ![Figure 1](https://github.com/NikolayGudkov/Some-analysis-of-the-Soft-Actor-Critic-algorithm/blob/main/SAC_plus_1.png)
 
-From the figure above, we see for all ten random seeds, there is a minor, if any, the difference in the SAC algorithm's performance with varying the number of Q-networks for solving the "Pendulum-v0" environment.
+From the figure above, we see that for all ten random seeds there is a minor, if any, difference in the SAC algorithm's performance with varying the number of Q-networks for solving the "Pendulum-v0" environment.
 
 For a single seed, the algorithm's performance for a different number of Q-networks is very similar during the initial training phase and indistinguishable during the final stage, as seen from the figure below.
 
